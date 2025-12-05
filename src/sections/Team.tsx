@@ -20,11 +20,17 @@ const Team = () => {
   return (
     <section id="team" className="section-padding bg-background">
       <div className="container-section">
-        <SectionTitle
-          subtitle="Our Leadership"
-          title="Meet Our Team"
-          description="Get to know the dedicated professionals behind CFG Renovations."
-        />
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <span className="inline-block text-primary font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+            Our Leadership
+          </span>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-black">
+            Meet Our Team
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Get to know the dedicated professionals behind CFG Renovations.
+          </p>
+        </div>
 
         <div className="flex justify-center">
           <div className="w-full max-w-lg">
