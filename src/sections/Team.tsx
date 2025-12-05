@@ -26,7 +26,7 @@ const Team = () => {
           description="Get to know the dedicated professionals behind CFG Renovations."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-md mx-auto">
           {teamMembers.map((member) => (
             <div
               key={member.name}
