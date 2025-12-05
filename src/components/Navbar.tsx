@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoImg from '@/assets/logo.jpg';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -26,25 +27,19 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-secondary/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-secondary/95 backdrop-blur-md shadow-lg py-2'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="container-section">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">P</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-heading font-bold text-xl text-primary-foreground">
-                Premier
-              </span>
-              <span className="font-heading font-medium text-xl text-primary">
-                {' '}Remodeling
-              </span>
-            </div>
+          <a href="#home" className="flex items-center">
+            <img 
+              src={logoImg} 
+              alt="CFG Renovations, LLC" 
+              className="h-14 md:h-16 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -62,9 +57,9 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+15551234567" className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary transition-colors">
+            <a href="tel:+16122445055" className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(555) 123-4567</span>
+              <span className="font-medium">(612) 244-5055</span>
             </a>
             <Button variant="hero" size="lg" asChild>
               <a href="#contact">Get a Quote</a>
@@ -95,11 +90,11 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="tel:+15551234567"
+                href="tel:+16122445055"
                 className="flex items-center gap-2 text-primary py-2"
               >
                 <Phone className="w-4 h-4" />
-                <span className="font-medium">(555) 123-4567</span>
+                <span className="font-medium">(612) 244-5055</span>
               </a>
               <Button variant="hero" size="lg" className="mt-2" asChild>
                 <a href="#contact">Get a Quote</a>
