@@ -49,7 +49,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary font-medium transition-colors duration-200`}
+                className="text-black hover:text-primary font-medium transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+16122445055" className={`flex items-center gap-2 ${isScrolled ? 'text-black' : 'text-white'} hover:text-primary transition-colors`}>
+            <a href="tel:+16122445055" className="flex items-center gap-2 text-black hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
               <span className="font-medium">(612) 244-5055</span>
             </a>
