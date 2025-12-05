@@ -13,10 +13,10 @@ const AddressSection = () => {
           </h4>
           <a
             href="tel:+15551234567"
-            className="text-muted-foreground hover:text-primary transition-colors text-lg"
+            className="text-muted-foreground hover:text-primary transition-colors text-lg 
+            block"
           >
             612-244-5055
-
           </a>
            <a
             href="mail:cgrenovations323@gmail.com"
