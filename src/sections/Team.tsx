@@ -26,44 +26,46 @@ const Team = () => {
           description="Get to know the dedicated professionals behind CFG Renovations."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-md mx-auto">
-          {teamMembers.map((member) => (
-            <div
-              key={member.name}
-              className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-              onClick={() => setSelectedMember(member)}
-            >
-              <div className="relative overflow-hidden h-80">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300" />
-              </div>
+        <div className="flex justify-center">
+          <div className="w-full max-w-lg">
+            {teamMembers.map((member) => (
+              <div
+                key={member.name}
+                className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => setSelectedMember(member)}
+              >
+                <div className="relative overflow-hidden h-96">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
+                </div>
 
-              <div className="p-6">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-semibold mb-3">{member.title}</p>
-                <p className="text-muted-foreground text-sm line-clamp-3">
-                  {member.description}
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="mt-4 w-full"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedMember(member);
-                  }}
-                >
-                  View Profile
-                </Button>
+                <div className="p-8">
+                  <h3 className="font-heading text-3xl font-bold text-foreground mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-primary font-semibold text-lg mb-4">{member.title}</p>
+                  <p className="text-muted-foreground text-base leading-relaxed mb-6">
+                    {member.description}
+                  </p>
+                  <Button
+                    variant="hero"
+                    size="lg"
+                    className="w-full"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedMember(member);
+                    }}
+                  >
+                    View Profile
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
