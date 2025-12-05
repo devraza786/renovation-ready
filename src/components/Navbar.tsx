@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoImg from '@/assets/logo.jpg';
+
+const logoImg = 'https://cdn.builder.io/api/v1/image/assets%2F0f00b454c21444a59a62cb373d89a358%2Fa0b9d4fe76af4ef9a9aca4450fa6fdd2?format=webp&width=800';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
