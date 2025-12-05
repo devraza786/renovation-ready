@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoImg from '@/assets/logo.jpg';
+import logoImg from '@/assets/logo.png';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -78,7 +78,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 animate-slide-in-right">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 text-black">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
