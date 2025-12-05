@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-secondary-white backdrop-blur-md shadow-lg py-2'
+          ? 'bg-secondary-white text-black backdrop-blur-md shadow-lg py-2'
           : 'bg-transparent py-4'
       }`}
     >
@@ -78,7 +78,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 animate-slide-in-right">
-            <div className="flex flex-col gap-4 text-black">
+            <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
