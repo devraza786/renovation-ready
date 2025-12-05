@@ -83,7 +83,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-black hover:text-primary font-medium py-2 transition-colors"
+                  className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary font-medium py-2 transition-colors`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
