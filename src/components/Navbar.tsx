@@ -48,7 +48,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-primary-foreground/80 hover:text-primary font-medium transition-colors duration-200"
+                className="text-black hover:text-primary font-medium transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+16122445055" className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary transition-colors">
+            <a href="tel:+16122445055" className="flex items-center gap-2 text-black hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
               <span className="font-medium">(612) 244-5055</span>
             </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-primary-foreground p-2"
+            className="lg:hidden text-black p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-primary-foreground/80 hover:text-primary font-medium py-2 transition-colors"
+                  className="text-black hover:text-primary font-medium py-2 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
