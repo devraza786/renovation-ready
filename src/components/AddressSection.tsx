@@ -37,8 +37,7 @@ const AddressSection = () => {
             Visit Our Office
           </h4>
           <p className="text-muted-foreground">
-            123 Construction Ave<br />
-            Springfield, IL 62701
+            Watertown, MN, United States.
           </p>
         </div>
       </div>
