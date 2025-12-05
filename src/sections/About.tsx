@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import aboutImg from '@/assets/about.jpg';
 
 const highlights = [
-  'Licensed, bonded & fully insured',
+  'Licensed & Insured - Lic.# BC809478',
   'Transparent pricing with no hidden fees',
   'Quality materials from trusted suppliers',
   'Dedicated project manager for every job',
   'Clean job sites & minimal disruption',
-  '2-year warranty on all workmanship',
+  'Warranty on all workmanship',
 ];
 
 const About = () => {
@@ -58,7 +58,7 @@ const About = () => {
               <span className="text-primary"> One Home</span> at a Time
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              Founded in 2010, Premier Remodeling has been transforming homes across the region 
+              CFG Renovations, LLC has been transforming homes across Minnesota 
               with exceptional craftsmanship and personalized service. We believe every home 
               deserves to be a sanctuary that reflects your unique style and needs.
             </p>

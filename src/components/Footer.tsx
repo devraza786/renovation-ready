@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import logoImg from '@/assets/logo.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,21 +11,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">P</span>
-              </div>
-              <div>
-                <span className="font-heading font-bold text-xl text-primary-foreground">
-                  Premier
-                </span>
-                <span className="font-heading font-medium text-xl text-primary">
-                  {' '}Remodeling
-                </span>
-              </div>
+            <div className="mb-6">
+              <img 
+                src={logoImg} 
+                alt="CFG Renovations, LLC" 
+                className="h-16 w-auto object-contain bg-white/90 rounded-lg p-2"
+              />
             </div>
             <p className="text-secondary-foreground/70 mb-6">
-              Transforming houses into dream homes since 2010. Quality craftsmanship, exceptional service, and stunning results.
+              Transforming houses into dream homes. Quality craftsmanship, exceptional service, and stunning results. Licensed & Insured - Lic.# BC809478
             </p>
             <div className="flex gap-4">
               <a
@@ -97,26 +92,26 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <span className="text-secondary-foreground/70">
-                  123 Construction Ave<br />
-                  Springfield, IL 62701
+                  Watertown, MN<br />
+                  United States
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+16122445055"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
                 >
-                  (555) 123-4567
+                  (612) 244-5055
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@premierremodeling.com"
+                  href="mailto:cgrenovations323@gmail.com"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
                 >
-                  info@premierremodeling.com
+                  cgrenovations323@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -136,7 +131,7 @@ const Footer = () => {
         <div className="container-section py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-secondary-foreground/60 text-sm text-center md:text-left">
-              © {currentYear} Premier Remodeling. All rights reserved.
+              © {currentYear} CFG Renovations, LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors">
