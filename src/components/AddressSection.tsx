@@ -15,11 +15,16 @@ const AddressSection = () => {
             href="tel:+15551234567"
             className="text-muted-foreground hover:text-primary transition-colors text-lg"
           >
-            (555) 123-4567
+            612-244-5055
+
           </a>
-          <p className="text-muted-foreground/60 text-sm mt-1">
-            Available Mon-Sat for consultations
-          </p>
+           <a
+            href="mail:cgrenovations323@gmail.com"
+            className="text-muted-foreground hover:text-primary transition-colors text-lg"
+          >
+           cgrenovations323@gmail.com
+
+          </a>
         </div>
       </div>
 
