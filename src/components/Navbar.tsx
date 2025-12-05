@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoImg from '@/assets/logo.png';
+
+const logoImg = 'https://cdn.builder.io/api/v1/image/assets%2F0f00b454c21444a59a62cb373d89a358%2Fa0b9d4fe76af4ef9a9aca4450fa6fdd2?format=webp&width=800';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -25,8 +26,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
         isScrolled
+          ? 'backdrop-blur-md shadow-lg py-2'
+          : 'py-4 shadow-md'
           ? 'bg-secondary-white text-black backdrop-blur-md shadow-lg py-2'
           : 'bg-transparent py-4'
       }`}
@@ -48,7 +51,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-primary-foreground/80 hover:text-primary font-medium transition-colors duration-200"
+                className="text-black hover:text-primary font-medium transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -57,7 +60,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+16122445055" className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary transition-colors">
+            <a href="tel:+16122445055" className="flex items-center gap-2 text-black hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
               <span className="font-medium">(612) 244-5055</span>
             </a>
@@ -68,7 +71,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-primary-foreground p-2"
+            className="lg:hidden text-black p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -83,7 +86,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-primary-foreground/80 hover:text-primary font-medium py-2 transition-colors"
+                  className="text-black hover:text-primary font-medium py-2 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
