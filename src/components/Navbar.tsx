@@ -91,7 +91,7 @@ const Navbar = () => {
               ))}
               <a
                 href="tel:+16122445055"
-                className="flex items-center gap-2 text-primary py-2"
+                className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'} py-2`}
               >
                 <Phone className="w-4 h-4" />
                 <span className="font-medium">(612) 244-5055</span>
